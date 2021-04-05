@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dist/styles.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <section class="payment-method">
+        <h2 class="subtitle">3. Payment method</h2>
+        <form  class="form" action="post">
+            <label class="labels" for="paypal">
+                <input type="radio" name="payment" required >
+                Paypal
+                <img src="images/paypal.svg" alt="paypal icon">
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble.</p>
+            </label>
+            <label class="labels" for="creditcard">
+                <input type="radio" name="payment" required>
+                Credit Card
+                <img src="images/visa.svg" alt="visa icon">
+                <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+            </label>
+            <input class="input-large-width written-input card-number" type="text" placeholder="4154 **** **** 4562" required>
+            <select class="written-input" name="month" id="month" required>
+                <option value="" disabled selected color: "#898989";>MM</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option> 
+            </select>
+            <select class="written-input" name="year" id="year" required>
+                <option value="" disabled selected>YY</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option> 
+            </select>
+            <input class="cvv written-input" type="number" placeholder="CVV/CVC" min="000" max="9999">
+            <img src="images/help.svg" alt="help" class="help-icon help">
+            <span class="help-text help">El CCV (Card Verification Value) es el código de verificación de la tarjeta. Podemos encontrarlo en el dorso de la misma.</span>
+            <input class="input-large-width written-input" type="text" placeholder="CARDHOLDER NAME">
+            <div class="buttons">
+                <button class="back" type="reset">Back</button>
+                <button class="continue" type="submit">Continue</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

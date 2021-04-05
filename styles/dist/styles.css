@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 800px;
+}
+
+.payment-method {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 570px;
+  height: 670px;
+  border: 1px solid #F4F4F4;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 3px rgba(128, 128, 128, 0.2);
+  font-family: "Noto Sans";
+}
+
+.subtitle {
+  height: 90px;
+  line-height: 90px;
+  color: #757575;
+  background: #f2f2f2;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0px;
+  padding: 0px 30px;
+}
+
+.form {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.labels {
+  color: #797979;
+  font-weight: 700;
+}
+.labels img {
+  position: absolute;
+  right: 30px;
+}
+.labels p {
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 115px;
+}
+
+.written-input {
+  height: 40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #A9A9A9;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.written-input::placeholder {
+  color: #A9A9A9;
+}
+
+.card-number::placeholder {
+  color: #797979;
+}
+
+.card-number {
+  margin-top: 40px;
+}
+
+.input-large-width {
+  width: 100%;
+}
+
+input[type=radio]:checked {
+  background-color: #88c9f6;
+}
+
+input[type=radio]:focus {
+  outline: none;
+}
+
+input[type=radio] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 4px solid #f2f2f2;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+input[type=text], input[type=number], select {
+  border: 2px solid #E4E4E4;
+  border-radius: 4px;
+}
+
+input[type=text]:focus, input[type=number]:focus, select:focus {
+  border: 2px solid #88C9F6;
+  outline: none;
+}
+
+select {
+  width: 110px;
+  margin-right: 20px;
+}
+
+.cvv {
+  width: 239px;
+}
+
+.help {
+  position: absolute;
+  right: 38px;
+  top: 458px;
+}
+
+.help-text {
+  display: none;
+  padding: 1px;
+  border: 1px solid #88c9f6;
+  border-radius: 1px;
+  font-size: 10px;
+  height: 80px;
+  width: 150px;
+  background: white;
+}
+
+.help-icon:hover + .help-text {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.back {
+  border: 2px solid #95989A;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  color: #666666;
+  width: 130px;
+  font-size: 14px;
+}
+
+.continue {
+  background: #88C9F6;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 6px;
+  width: 130px;
+  font-size: 14px;
+}
